@@ -69,11 +69,16 @@ app.use(function (req, res, next) {
 /*Express Sessions*/
 //app.use(expressSession({secret: 'miclavesecreta', proxy: true, resave: true, saveUninitialized: true}));
 app.use(expressSession({ 
-  secret: 'ilovescotchscotchyscotchscotch',  
+  secret: process.env.SESSION_SECRET || 'defaultsecret',  
   resave: false, 
   saveUninitialized: true, 
   cookie:{
-     maxAge : 360000000000 // one hour in millis
+     maxAge : 3600000, // one hour in millis
+     httpOnly: true,
+     secure: process.env.NODE_ENV === 'production',
+     domain: 'yourdomain.com',
+     path: '/',
+     expires: new Date(Date.now() + 3600000) // one hour from now
    }
  }));
 

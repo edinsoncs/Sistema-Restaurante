@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var ObjectId = require('mongodb').ObjectID;
+var ObjectId = require('mongodb').ObjectId;
 
 router.get('/', function(req, res, next){
 	res.render('mesas', {

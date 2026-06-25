@@ -1,5 +1,7 @@
-'use strict'
+'use strict';
 //Initialize Project Restaurant CMS 2018
+
+require('dotenv').config();
 
 var express = require('express');
 var path = require('path');
@@ -8,12 +10,16 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var monk = require('monk');
-var db = monk("localhost:27017/rest");
+var mongodbUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/rest';
+var db = monk(mongodbUri);
 var mongodb = require('mongodb');
 var mongoose = require('mongoose');
 var passport = require('passport');
 var expressSession = require('express-session');
 var LocalStrategy = require('passport-local').Strategy;
+
+var supabase = require('./config/supabase');
+var firebase = require('./config/firebase');
 
 var printer = require('node-thermal-printer');
 
@@ -31,10 +37,13 @@ var ventas = require('./routes/ventas');
 var apipollos = require('./routes/apipollos');
 
 
-mongoose.connect('mongodb://localhost:27017/rest' , function(err, res){
-  if(err) throw err;
-  console.log('Genial me conecte a la bd');
-});
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/rest')
+  .then(function() {
+    console.log('Genial me conecte a la bd');
+  })
+  .catch(function(err) {
+    throw err;
+  });
 
 
 
@@ -53,6 +62,8 @@ var app = express();
 
 app.use(function(req,res,next){
   req.db = db;
+  req.supabase = supabase;
+  req.firebase = firebase;
   next();
 });
 
@@ -96,7 +107,8 @@ function ensureAuthenticated(req, res, next) {
 
 
 
-// view engine setup
+// view engine setup — pug handles .jade templates (pug is the successor to jade)
+app.engine('jade', require('pug').__express);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 

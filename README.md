@@ -1,3 +1,9 @@
+🌐 **Choose which language to read**
+
+- 🇺🇸 English
+- 🇪🇸 [Español](README.es.md)
+
+---
 <p align="center">
   <img src="https://img.shields.io/badge/status-under_development-orange?style=for-the-badge" alt="Status" />
   <img src="https://img.shields.io/badge/version-1.0.0_beta-blue?style=for-the-badge" alt="Version" />

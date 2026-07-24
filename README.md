@@ -1,200 +1,205 @@
+🌐 **Choose which language to read**
+
+- 🇺🇸 English
+- 🇪🇸 [Español](README.es.md)
+
+---
 <p align="center">
-  <img src="https://img.shields.io/badge/status-en_desarrollo-orange?style=for-the-badge" alt="Status" />
-  <img src="https://img.shields.io/badge/versión-1.0.0_beta-blue?style=for-the-badge" alt="Version" />
-  <img src="https://img.shields.io/badge/licencia-MIT-green?style=for-the-badge" alt="License" />
+  <img src="https://img.shields.io/badge/status-under_development-orange?style=for-the-badge" alt="Status" />
+  <img src="https://img.shields.io/badge/version-1.0.0_beta-blue?style=for-the-badge" alt="Version" />
+  <img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge" alt="License" />
   <img src="https://img.shields.io/badge/Next.js-15.1-black?style=for-the-badge&logo=next.js" alt="Next.js" />
   <img src="https://img.shields.io/badge/React-19.0-blue?style=for-the-badge&logo=react" alt="React" />
   <img src="https://img.shields.io/badge/TypeScript-5.7-blue?style=for-the-badge&logo=typescript" alt="TypeScript" />
 </p>
 
-<h1 align="center">🍽️ Sistema Restaurante CMS</h1>
+<h1 align="center">🍽️ Restaurant CMS</h1>
 
 <p align="center">
-  <strong>Plataforma de gestión integral para restaurantes y cafeterías</strong><br />
-  <em>Potenciado por las tecnologías más modernas del ecosistema JavaScript</em>
+  <strong>Comprehensive Management Platform for Restaurants and Cafés</strong><br />
+  <em>Powered by the latest technologies in the JavaScript ecosystem</em>
 </p>
 
 <p align="center">
-  <a href="#características-principales">Características</a> •
-  <a href="#arquitectura-del-sistema">Arquitectura</a> •
-  <a href="#roadmap-desarrollo">Roadmap</a> •
-  <a href="#instalación-rápida">Instalación</a> •
-  <a href="#contribución-diaria">Contribuir</a>
+  <a href="#key-features">Features</a> •
+  <a href="#system-architecture">Architecture</a> •
+  <a href="#development-roadmap">Roadmap</a> •
+  <a href="#quick-installation">Installation</a> •
+  <a href="#daily-contribution">Contributing</a>
 </p>
 
 ---
 
-## 📋 Tabla de Contenidos
+## 📋 Table of Contents
 
-- [Visión del Proyecto](#visión-del-proyecto)
-- [Características Principales](#características-principales)
-- [Stack Tecnológico](#stack-tecnológico)
-- [Arquitectura del Sistema](#arquitectura-del-sistema)
-- [Instalación Rápida](#instalación-rápida)
-- [Roadmap de Desarrollo](#roadmap-desarrollo)
-- [Estructura del Proyecto](#estructura-del-proyecto)
-- [Comandos Disponibles](#comandos-disponibles)
-- [Convenciones de Desarrollo](#convenciones-desarrollo)
-- [Contribución Diaria](#contribución-diaria)
-- [Estado Actual](#estado-actual)
-
----
-
-## 🎯 Visión del Proyecto
-
-**Sistema Restaurante CMS** transforma la gestión de restaurantes tradicionales en una experiencia digital moderna. Diseñado para propietarios y gerentes que necesitan control total sobre su negocio desde cualquier dispositivo.
-
-### ¿Por qué este sistema?
-
-- **Sin vendor lock-in**: Compatible con Supabase y Firebase
-- **Offline-first**: Funciona incluso sin conexión a internet
-- **Multi-idioma**: 6 idiomas listos para producción (ES, EN, FR, ZH, RU, PT)
-- **Escalable**: Arquitectura modular que crece con tu negocio
-- **Tecnología moderna**: Next.js 15, React 19, TypeScript 5.7, Tailwind CSS 3.4
-- **Seguridad enterprise**: Autenticación, roles y permisos granulares
-
-### ¿Para quién es?
-
-🍴 **Restaurantes de cualquier tamaño**  
-☕ **Cafeterías y coffee shops**  
-🏪 **Food trucks y kioscos**  
-📊 **Cadenas con múltiples ubicaciones**
+- [Project Vision](#project-vision)
+- [Key Features](#key-features)
+- [Technology Stack](#technology-stack)
+- [System Architecture](#system-architecture)
+- [Quick Installation](#quick-installation)
+- [Development Roadmap](#development-roadmap)
+- [Project Structure](#project-structure)
+- [Available Commands](#available-commands)
+- [Development Conventions](#development-conventions)
+- [Daily Contribution](#daily-contribution)
+- [Current Status](#current-status)
 
 ---
 
-## ⚡ Características Principales
+## 🎯 Project Vision
 
-### 🎯 Módulo de Pedidos (Semana 1-2)
+**Restaurant CMS** transforms the management of traditional restaurants into a modern digital experience. It is designed for restaurant owners and managers who need complete control of their business from any device.
 
-- [ ] Creación de pedidos en tiempo real
-- [ ] Gestión de mesas con drag & drop
-- [ ] Sistema de comandas digitales
-- [ ] División de cuentas inteligente
-- [ ] Notas y modificaciones por plato
-- [ ] Estados del pedido: pendiente, preparando, listo, entregado
+### Why Choose This System?
 
-### 🍕 Módulo de Menú y Productos (Semana 2-3)
+- **No Vendor Lock-in**: Compatible with both Supabase and Firebase
+- **Offline-First**: Works even without an internet connection
+- **Multi-language Support**: Production-ready with 6 languages (ES, EN, FR, ZH, RU, PT)
+- **Scalable**: Modular architecture that grows with your business
+- **Modern Technology**: Built with Next.js 15, React 19, TypeScript 5.7, and Tailwind CSS 3.4
+- **Enterprise-Grade Security**: Authentication, roles, and granular permissions
 
-- [ ] Catálogo de productos con imágenes
-- [ ] Categorías y subcategorías ilimitadas
-- [ ] Modificadores y combos
-- [ ] Control de stock en tiempo real
-- [ ] Precios variables por horario
-- [ ] Productos agotados automáticos
-- [ ] Traducción multi-idioma de menús
+### Who Is It For?
 
-### 💳 Módulo de Pagos (Semana 3-4)
-
-- [ ] Integración con pasarelas de pago
-- [ ] Múltiples métodos: efectivo, tarjeta, QR
-- [ ] Propinas digitales
-- [ ] Descuentos y promociones
-- [ ] Facturación electrónica
-- [ ] Cierre de caja automático
-
-### 👥 Módulo de Personal (Semana 4-5)
-
-- [ ] Sistema de roles: administrador, gerente, mozo, cajero, cocina
-- [ ] Control de acceso basado en permisos
-- [ ] Turnos y horarios
-- [ ] Comisiones por venta
-- [ ] Evaluación de desempeño
-- [ ] Registro de actividades (audit log)
-
-### 📊 Módulo de Reportes y Analytics (Semana 5-6)
-
-- [ ] Dashboard ejecutivo con KPIs
-- [ ] Ventas por hora, día, mes, año
-- [ ] Productos más vendidos
-- [ ] Análisis de rentabilidad
-- [ ] Gráficos interactivos
-- [ ] Exportación a Excel/PDF
-- [ ] Predicciones basadas en IA
-
-### 📱 Módulo Móvil (Semana 6-7)
-
-- [ ] PWA (Progressive Web App) instalable
-- [ ] QR para menú digital
-- [ ] Pedidos desde mesa con QR
-- [ ] Notificaciones push
-- [ ] Modo offline para mozos
-- [ ] Sincronización automática
-
-### ⚙️ Módulo de Configuración (Semana 7-8)
-
-- [ ] Perfil del restaurante
-- [ ] Horarios de atención
-- [ ] Zonas y mesas personalizables
-- [ ] Impuestos y descuentos
-- [ ] Impresión de tickets
-- [ ] Backup y restauración
-
-### 🔧 Características Transversales
-
-- **Internacionalización completa**: 6 idiomas (ES, EN, FR, ZH, RU, PT)
-- **Temas personalizables**: Modo claro/oscuro
-- **Responsive design**: Funciona en desktop, tablet y móvil
-- **Real-time sync**: Sincronización en tiempo real con WebSockets
-- **Offline-first**: Funciona sin internet, sincroniza después
-- **Accesibilidad WCAG 2.1 AA**: Inclusivo para todos los usuarios
-- **Performance 100**: Optimizado para carga instantánea
+🍴 **Restaurants of all sizes**  
+☕ **Cafés and Coffee Shops**  
+🏪 **Food Trucks and Kiosks**  
+📊 **Multi-Location Restaurant Chains**
 
 ---
 
-## 🛠️ Stack Tecnológico
+## ⚡ Key Features
+
+### 🎯 Order Management Module (Weeks 1–2)
+
+- [ ] Real-time order creation
+- [ ] Drag-and-drop table management
+- [ ] Digital kitchen order system
+- [ ] Smart bill splitting
+- [ ] Dish notes and customizations
+- [ ] Order statuses: Pending, Preparing, Ready, Delivered
+
+### 🍕 Menu & Product Module (Weeks 2–3)
+
+- [ ] Product catalog with images
+- [ ] Unlimited categories and subcategories
+- [ ] Product modifiers and combo meals
+- [ ] Real-time inventory management
+- [ ] Time-based pricing
+- [ ] Automatic out-of-stock detection
+- [ ] Multi-language menu translations
+
+### 💳 Payment Module (Weeks 3–4)
+
+- [ ] Payment gateway integration
+- [ ] Multiple payment methods: Cash, Card, QR Code
+- [ ] Digital tipping
+- [ ] Discounts and promotions
+- [ ] Electronic invoicing
+- [ ] Automatic cash register closing
+
+### 👥 Staff Management Module (Weeks 4–5)
+
+- [ ] Role-based system: Administrator, Manager, Waiter, Cashier, Kitchen Staff
+- [ ] Permission-based access control
+- [ ] Shift and schedule management
+- [ ] Sales commission tracking
+- [ ] Performance evaluation
+- [ ] Activity logging (Audit Log)
+### 📊 Reports & Analytics Module (Weeks 5–6)
+
+- [ ] Executive dashboard with KPIs
+- [ ] Sales analytics by hour, day, month, and year
+- [ ] Best-selling products
+- [ ] Profitability analysis
+- [ ] Interactive charts and graphs
+- [ ] Export reports to Excel/PDF
+- [ ] AI-powered sales predictions
+
+### 📱 Mobile Module (Weeks 6–7)
+
+- [ ] Installable Progressive Web App (PWA)
+- [ ] QR code for digital menu
+- [ ] QR-based table ordering
+- [ ] Push notifications
+- [ ] Offline mode for waitstaff
+- [ ] Automatic data synchronization
+
+### ⚙️ Settings Module (Weeks 7–8)
+
+- [ ] Restaurant profile management
+- [ ] Business hours configuration
+- [ ] Customizable dining areas and tables
+- [ ] Taxes and discount settings
+- [ ] Receipt printing
+- [ ] Backup and restore
+
+### 🔧 Core Features
+
+- **Full Internationalization**: Production-ready with 6 languages (ES, EN, FR, ZH, RU, PT)
+- **Customizable Themes**: Light and Dark modes
+- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
+- **Real-Time Synchronization**: Live updates with WebSockets
+- **Offline-First**: Works without an internet connection and syncs automatically once online
+- **WCAG 2.1 AA Accessibility**: Inclusive and accessible for all users
+- **Performance Score of 100**: Optimized for fast loading and responsiveness
+
+---
+
+## 🛠️ Technology Stack
 
 ### Frontend
 
-| Tecnología | Versión | Uso |
-|------------|---------|-----|
-| **Next.js** | 15.1 | Framework React con SSR/SSG |
-| **React** | 19.0 | UI library con Server Components |
-| **TypeScript** | 5.7 | Type safety y DX mejorado |
+| Technology | Version | Purpose |
+|------------|---------|---------|
+| **Next.js** | 15.1 | React framework with SSR/SSG support |
+| **React** | 19.0 | UI library with Server Components |
+| **TypeScript** | 5.7 | Type safety and improved developer experience |
 | **Tailwind CSS** | 3.4 | Utility-first CSS framework |
-| **React Query** | 5.x | Data fetching y caché |
-| **Zustand** | 4.x | State management ligero |
-| **React Hook Form** | 7.x | Formularios performantes |
-| **Zod** | 3.x | Validación de esquemas |
-| **Lucide React** | 0.468 | Iconos modernos |
-| **date-fns** | 3.x | Manipulación de fechas |
-| **chart.js** | 4.x | Gráficos interactivos |
-| **react-beautiful-dnd** | 14.x | Drag & drop |
+| **React Query** | 5.x | Data fetching and caching |
+| **Zustand** | 4.x | Lightweight state management |
+| **React Hook Form** | 7.x | High-performance form handling |
+| **Zod** | 3.x | Schema validation |
+| **Lucide React** | 0.468 | Modern icon library |
+| **date-fns** | 3.x | Date manipulation utilities |
+| **Chart.js** | 4.x | Interactive charts |
+| **react-beautiful-dnd** | 14.x | Drag-and-drop functionality |
 
-### Backend & Base de Datos
+### Backend & Database
 
-| Tecnología | Versión | Uso |
-|------------|---------|-----|
-| **Supabase** | 2.x | PostgreSQL + Auth + Realtime |
-| **Firebase** | 12.x | Auth + Firestore + Storage |
-| **Next.js API Routes** | 15.x | Endpoints del servidor |
-| **Prisma** | 5.x | ORM type-safe |
-| **Zod** | 3.x | Validación en API |
+| Technology | Version | Purpose |
+|------------|---------|---------|
+| **Supabase** | 2.x | PostgreSQL, Authentication, and Realtime |
+| **Firebase** | 12.x | Authentication, Firestore, and Storage |
+| **Next.js API Routes** | 15.x | Backend API endpoints |
+| **Prisma** | 5.x | Type-safe ORM |
+| **Zod** | 3.x | API request validation |
 
 ### Testing & Quality
 
-| Tecnología | Versión | Uso |
-|------------|---------|-----|
+| Technology | Version | Purpose |
+|------------|---------|---------|
 | **Vitest** | 1.x | Unit testing |
-| **React Testing Library** | 14.x | Testing de componentes |
-| **Playwright** | 1.x | E2E testing |
-| **ESLint** | 9.x | Linting |
-| **Prettier** | 3.x | Formateo de código |
+| **React Testing Library** | 14.x | Component testing |
+| **Playwright** | 1.x | End-to-end testing |
+| **ESLint** | 9.x | Code linting |
+| **Prettier** | 3.x | Code formatting |
 | **Husky** | 9.x | Git hooks |
 
-### DevOps & Deploy
+### DevOps & Deployment
 
-| Tecnología | Versión | Uso |
-|------------|---------|-----|
-| **Vercel** | - | Deploy automático |
-| **GitHub Actions** | - | CI/CD |
-| **Docker** | 24.x | Containerización |
+| Technology | Version | Purpose |
+|------------|---------|---------|
+| **Vercel** | - | Automatic deployment |
+| **GitHub Actions** | - | Continuous Integration / Continuous Deployment (CI/CD) |
+| **Docker** | 24.x | Containerization |
 | **Turborepo** | 1.x | Monorepo management |
 
 ---
 
-## 🏗️ Arquitectura del Sistema
+## 🏗️ System Architecture
 
-### Arquitectura General
+### Overall Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -252,19 +257,19 @@ app/
     └── reports/
 ```
 
-### Patrones de Diseño
+### Design Patterns
 
-- **Repository Pattern**: Abstracción de capa de datos
-- **Service Layer**: Lógica de negocio separada de UI
-- **Composition**: Componentes pequeños y reutilizables
-- **Feature-based**: Organización por módulos de negocio
-- **Type-driven**: TypeScript en toda la capa de datos
+- **Repository Pattern**: Data layer abstraction
+- **Service Layer**: Business logic separated from the UI
+- **Composition**: Small, reusable components
+- **Feature-Based Architecture**: Organized by business modules
+- **Type-Driven Development**: TypeScript used throughout the data layer
 
 ---
 
-## 🚀 Instalación Rápida
+## 🚀 Quick Installation
 
-### Requisitos Previos
+### Prerequisites
 
 ```bash
 node --version     # >= 20.0.0
@@ -272,352 +277,357 @@ npm --version      # >= 10.0.0
 git --version      # >= 2.30.0
 ```
 
-### Paso 1: Clonar el Repositorio
+### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/tu-usuario/sistema-restaurante.git
-cd sistema-restaurante
+git clone https://github.com/your-username/restaurant-cms.git
+cd restaurant-cms
 ```
 
-### Paso 2: Instalar Dependencias
+### Step 2: Install Dependencies
 
 ```bash
 npm install
 ```
 
-### Paso 3: Configurar Variables de Entorno
+### Step 3: Configure Environment Variables
 
 ```bash
 cp .env.example .env.local
 ```
 
-Edita `.env.local` y completa las credenciales de tu proveedor de datos:
+Edit `.env.local` and add your preferred data provider credentials.
 
-#### Para Supabase:
+#### Supabase
 
 ```env
-NEXT_PUBLIC_SUPABASE_URL=https://tu-proyecto.supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=tu-anon-key
+NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
 ```
 
-#### Para Firebase:
+#### Firebase
 
 ```env
-NEXT_PUBLIC_FIREBASE_API_KEY=tu-api-key
-NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=tu-proyecto.firebaseapp.com
-NEXT_PUBLIC_FIREBASE_PROJECT_ID=tu-project-id
-NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=tu-proyecto.appspot.com
+NEXT_PUBLIC_FIREBASE_API_KEY=your-api-key
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your-project.firebaseapp.com
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your-project-id
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your-project.appspot.com
 NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=000000000000
 NEXT_PUBLIC_FIREBASE_APP_ID=1:000000000000:web:abcdef123456
 ```
 
-### Paso 4: Ejecutar el Instalador
+### Step 4: Run the Installer
 
 ```bash
 npm run dev
 ```
 
-Abre tu navegador en `http://localhost:3000`
+Open your browser and visit:
 
-El **instalador wizard** te guiará en 4 pasos:
+```text
+http://localhost:3000
+```
 
-1. **Idioma**: Selecciona uno de los 6 idiomas disponibles
-2. **Negocio**: Define si es restaurante o cafetería
-3. **Credenciales**: Configura nombre, usuario admin y contraseña
-4. **Proveedor**: Elige entre Supabase o Firebase
+The **installation wizard** will guide you through four simple steps:
 
-### Paso 5: Acceder al Panel
+1. **Language** – Select one of the six available languages.
+2. **Business Type** – Choose whether your business is a restaurant or a café.
+3. **Credentials** – Configure the restaurant name, administrator username, and password.
+4. **Data Provider** – Choose between Supabase and Firebase.
 
-Una vez completada la instalación, serás redirigido al dashboard principal.
+### Step 5: Access the Dashboard
+
+After completing the installation, you will be redirected to the main dashboard.
 
 ---
 
-## 📅 Roadmap de Desarrollo
+## 📅 Development Roadmap
 
-### Desarrollo Activo: 8 Semanas (2 Meses)
+### Active Development: 8 Weeks (2 Months)
 
-El proyecto se actualizará diariamente con commits, mejoras y nuevas funcionalidades.
+The project will be updated daily with new commits, improvements, and features.
 
-#### **Semana 1: Fundamentos y Autenticación**
+#### **Week 1: Foundation & Authentication**
 
-| Día | Feature | Estado |
+| Day | Feature | Status |
 |-----|---------|--------|
-| 1 | Configurar proyecto Next.js 15 con TypeScript | ✅ Completado |
-| 2 | Sistema de autenticación con Supabase/Firebase | 🔄 En progreso |
-| 3 | Rutas protegidas y middleware | ⏳ Pendiente |
-| 4 | Roles de usuario (admin, gerente, mozo) | ⏳ Pendiente |
-| 5 | Permisos granulares por ruta | ⏳ Pendiente |
-| 6 | Recuperación de contraseña | ⏳ Pendiente |
-| 7 | Auditoría de sesiones | ⏳ Pendiente |
+| 1 | Set up the Next.js 15 project with TypeScript | ✅ Completed |
+| 2 | Authentication system with Supabase/Firebase | 🔄 In Progress |
+| 3 | Protected routes and middleware | ⏳ Planned |
+| 4 | User roles (Administrator, Manager, Waiter) | ⏳ Planned |
+| 5 | Granular route permissions | ⏳ Planned |
+| 6 | Password recovery | ⏳ Planned |
+| 7 | Session auditing | ⏳ Planned |
 
-#### **Semana 2: Gestión de Pedidos**
+#### **Week 2: Order Management**
 
-| Día | Feature | Estado |
+| Day | Feature | Status |
 |-----|---------|--------|
-| 8 | Crear nuevo pedido | ⏳ Pendiente |
-| 9 | Agregar productos al pedido | ⏳ Pendiente |
-| 10 | Modificar pedido (cantidades, notas) | ⏳ Pendiente |
-| 11 | Estados del pedido (workflow) | ⏳ Pendiente |
-| 12 | Historial de pedidos | ⏳ Pendiente |
-| 13 | Filtros y búsqueda de pedidos | ⏳ Pendiente |
-| 14 | Impresión de comandas | ⏳ Pendiente |
+| 8 | Create a new order | ⏳ Planned |
+| 9 | Add products to an order | ⏳ Planned |
+| 10 | Modify orders (quantities, notes) | ⏳ Planned |
+| 11 | Order status workflow | ⏳ Planned |
+| 12 | Order history | ⏳ Planned |
+| 13 | Order search and filtering | ⏳ Planned |
+| 14 | Kitchen ticket printing | ⏳ Planned |
 
-#### **Semana 3: Menú y Productos**
+#### **Week 3: Menu & Products**
 
-| Día | Feature | Estado |
+| Day | Feature | Status |
 |-----|---------|--------|
-| 15 | CRUD de productos | ⏳ Pendiente |
-| 16 | Upload de imágenes (Supabase Storage) | ⏳ Pendiente |
-| 17 | Categorías y subcategorías | ⏳ Pendiente |
-| 18 | Modificadores por producto | ⏳ Pendiente |
-| 19 | Control de stock | ⏳ Pendiente |
-| 20 | Precios múltiples (happy hour) | ⏳ Pendiente |
-| 21 | Productos destacados | ⏳ Pendiente |
+| 15 | Product CRUD operations | ⏳ Planned |
+| 16 | Image uploads (Supabase Storage) | ⏳ Planned |
+| 17 | Categories and subcategories | ⏳ Planned |
+| 18 | Product modifiers | ⏳ Planned |
+| 19 | Inventory management | ⏳ Planned |
+| 20 | Multiple pricing (Happy Hour) | ⏳ Planned |
+| 21 | Featured products | ⏳ Planned |
 
-#### **Semana 4: Mesas y Zonas**
+#### **Week 4: Tables & Zones**
 
-| Día | Feature | Estado |
+| Day | Feature | Status |
 |-----|---------|--------|
-| 22 | Crear zonas (sala, terraza, bar) | ⏳ Pendiente |
-| 23 | Configurar mesas por zona | ⏳ Pendiente |
-| 24 | Mapa interactivo de mesas | ⏳ Pendiente |
-| 25 | Asignar pedidos a mesas | ⏳ Pendiente |
-| 26 | Estados de mesa (libre, ocupada, reservada) | ⏳ Pendiente |
-| 27 | Fusión de mesas | ⏳ Pendiente |
-| 28 | División de cuenta por mesa | ⏳ Pendiente |
+| 22 | Create dining areas (Dining Room, Terrace, Bar) | ⏳ Planned |
+| 23 | Configure tables by area | ⏳ Planned |
+| 24 | Interactive table map | ⏳ Planned |
+| 25 | Assign orders to tables | ⏳ Planned |
+| 26 | Table statuses (Available, Occupied, Reserved) | ⏳ Planned |
+| 27 | Merge tables | ⏳ Planned |
+| 28 | Split bills by table | ⏳ Planned |
 
-#### **Semana 5: Pagos y Facturación**
+#### **Week 5: Payments & Billing**
 
-| Día | Feature | Estado |
+| Day | Feature | Status |
 |-----|---------|--------|
-| 29 | Cierre de caja | ⏳ Pendiente |
-| 30 | Métodos de pago (efectivo, tarjeta) | ⏳ Pendiente |
-| 31 | Cálculo de propinas | ⏳ Pendiente |
-| 32 | Descuentos por pedido | ⏳ Pendiente |
-| 33 | Impuestos automáticos | ⏳ Pendiente |
-| 34 | Generación de recibos | ⏳ Pendiente |
-| 35 | Integración con factura electrónica | ⏳ Pendiente |
-
-#### **Semana 6: Reportes y Dashboard**
-
-| Día | Feature | Estado |
-|-----|---------|--------|
-| 36 | Dashboard con KPIs principales | ⏳ Pendiente |
-| 37 | Gráficos de ventas (día/mes/año) | ⏳ Pendiente |
-| 38 | Reporte de productos más vendidos | ⏳ Pendiente |
-| 39 | Análisis de rentabilidad | ⏳ Pendiente |
-| 40 | Reporte de personal (horas, ventas) | ⏳ Pendiente |
-| 41 | Exportación a Excel | ⏳ Pendiente |
-| 42 | Exportación a PDF | ⏳ Pendiente |
-
-#### **Semana 7: PWA y Móvil**
-
-| Día | Feature | Estado |
-|-----|---------|--------|
-| 43 | Configuración de PWA | ⏳ Pendiente |
-| 44 | Service Worker para offline | ⏳ Pendiente |
-| 45 | QR para menú digital | ⏳ Pendiente |
-| 46 | Pedido por QR (cliente) | ⏳ Pendiente |
-| 47 | Notificaciones push | ⏳ Pendiente |
-| 48 | Optimización móvil | ⏳ Pendiente |
-| 49 | Instalación en home screen | ⏳ Pendiente |
-
-#### **Semana 8: Pulido y Testing**
-
-| Día | Feature | Estado |
-|-----|---------|--------|
-| 50 | Unit tests (Vitest) | ⏳ Pendiente |
-| 51 | Component tests (Testing Library) | ⏳ Pendiente |
-| 52 | E2E tests (Playwright) | ⏳ Pendiente |
-| 53 | Optimización de performance | ⏳ Pendiente |
-| 54 | Accesibilidad WCAG 2.1 AA | ⏳ Pendiente |
-| 55 | Documentación de API | ⏳ Pendiente |
-| 56 | Deploy a producción | ⏳ Pendiente |
-
-### 📊 Progreso Actual
+| 29 | Cash register closing | ⏳ Planned |
+| 30 | Payment methods (Cash, Card) | ⏳ Planned |
+| 31 | Tip calculation | ⏳ Planned |
+| 32 | Order discounts | ⏳ Planned |
+| 33 | Automatic tax calculation | ⏳ Planned |
+| 34 | Receipt generation | ⏳ Planned |
+| 35 | Electronic invoice integration | ⏳ Planned |
 
 ```
-Semana 1/8  ████████░░░░░░░░  12%
+#### **Week 6: Reports & Dashboard**
+
+| Day | Feature | Status |
+|-----|---------|--------|
+| 36 | Executive dashboard with key KPIs | ⏳ Planned |
+| 37 | Sales charts (daily/monthly/yearly) | ⏳ Planned |
+| 38 | Best-selling products report | ⏳ Planned |
+| 39 | Profitability analysis | ⏳ Planned |
+| 40 | Staff performance reports (hours, sales) | ⏳ Planned |
+| 41 | Excel export | ⏳ Planned |
+| 42 | PDF export | ⏳ Planned |
+
+#### **Week 7: PWA & Mobile**
+
+| Day | Feature | Status |
+|-----|---------|--------|
+| 43 | PWA configuration | ⏳ Planned |
+| 44 | Offline Service Worker | ⏳ Planned |
+| 45 | QR code for digital menu | ⏳ Planned |
+| 46 | QR ordering (customer) | ⏳ Planned |
+| 47 | Push notifications | ⏳ Planned |
+| 48 | Mobile optimization | ⏳ Planned |
+| 49 | Home screen installation | ⏳ Planned |
+
+#### **Week 8: Polishing & Testing**
+
+| Day | Feature | Status |
+|-----|---------|--------|
+| 50 | Unit tests (Vitest) | ⏳ Planned |
+| 51 | Component tests (Testing Library) | ⏳ Planned |
+| 52 | End-to-End tests (Playwright) | ⏳ Planned |
+| 53 | Performance optimization | ⏳ Planned |
+| 54 | WCAG 2.1 AA accessibility | ⏳ Planned |
+| 55 | API documentation | ⏳ Planned |
+| 56 | Production deployment | ⏳ Planned |
+
+### 📊 Current Progress
+
+```text
+Week 1/8  ████████░░░░░░░░  12%
 ```
 
-**Días completados**: 1 / 56  
-**Features completadas**: 1 / 56  
-**Próximo hito**: Sistema de autenticación completo
+**Completed Days:** 1 / 56  
+**Completed Features:** 1 / 56  
+**Next Milestone:** Complete Authentication System
 
 ---
 
-## 📁 Estructura del Proyecto
+## 📁 Project Structure
 
-```
-sistema-restaurante/
-├── app/                           # App Router de Next.js 15
-│   ├── (auth)/                   # Rutas de autenticación
+```text
+restaurant-cms/
+├── app/                           # Next.js 15 App Router
+│   ├── (auth)/                    # Authentication routes
 │   │   ├── login/
 │   │   └── register/
-│   ├── (dashboard)/              # Dashboard protegido
-│   │   ├── orders/              # Pedidos
-│   │   ├── menu/                # Menú y productos
-│   │   ├── tables/              # Mesas y zonas
-│   │   ├── staff/               # Personal
-│   │   ├── reports/             # Reportes
-│   │   └── settings/            # Configuración
-│   ├── api/                     # API routes
+│   ├── (dashboard)/               # Protected dashboard
+│   │   ├── orders/                # Order management
+│   │   ├── menu/                  # Menu and products
+│   │   ├── tables/                # Tables and dining areas
+│   │   ├── staff/                 # Staff management
+│   │   ├── reports/               # Reports and analytics
+│   │   └── settings/              # Application settings
+│   ├── api/                       # API routes
 │   │   ├── auth/
 │   │   ├── orders/
 │   │   ├── products/
 │   │   └── reports/
-│   ├── layout.tsx               # Layout raíz
-│   ├── page.tsx                 # Página de inicio (installer)
-│   └── globals.css              # Estilos globales
-├── components/                   # Componentes reutilizables
-│   ├── installer/               # Componentes del instalador
-│   │   ├── ui.tsx              # UI primitives
-│   │   └── installer.tsx       # Wizard principal
-│   ├── ui/                      # Componentes UI (shadcn-style)
+│   ├── layout.tsx                 # Root layout
+│   ├── page.tsx                   # Landing page (installer)
+│   └── globals.css                # Global styles
+├── components/                    # Reusable components
+│   ├── installer/                 # Installer components
+│   │   ├── ui.tsx                 # UI primitives
+│   │   └── installer.tsx          # Main installation wizard
+│   ├── ui/                        # UI components (shadcn-style)
 │   │   ├── Button.tsx
 │   │   ├── Input.tsx
 │   │   ├── Card.tsx
 │   │   └── Table.tsx
-│   └── features/                # Componentes por dominio
+│   └── features/                  # Feature-specific components
 │       ├── orders/
 │       ├── menu/
 │       └── tables/
-├── lib/                          # Utilidades y lógica compartida
-│   ├── installer.ts            # Lógica del instalador
-│   ├── providers.ts            # Supabase/Firebase clients
-│   ├── auth/                   # Lógica de autenticación
-│   ├── db/                     # Acceso a base de datos
-│   ├── utils.ts                # Funciones helper
-│   └── constants.ts            # Constantes globales
-├── hooks/                        # Custom React hooks
+├── lib/                           # Shared utilities and business logic
+│   ├── installer.ts               # Installer logic
+│   ├── providers.ts               # Supabase/Firebase clients
+│   ├── auth/                      # Authentication logic
+│   ├── db/                        # Database layer
+│   ├── utils.ts                   # Utility functions
+│   └── constants.ts               # Global constants
+├── hooks/                         # Custom React hooks
 │   ├── useAuth.ts
 │   ├── useOrders.ts
 │   └── useProducts.ts
-├── types/                        # TypeScript type definitions
+├── types/                         # TypeScript definitions
 │   ├── order.ts
 │   ├── product.ts
 │   └── user.ts
-├── stores/                       # Zustand stores
+├── stores/                        # Zustand stores
 │   ├── authStore.ts
 │   └── cartStore.ts
-├── public/                       # Assets estáticos
+├── public/                        # Static assets
 │   ├── icons/
 │   └── images/
-├── tests/                        # Tests
+├── tests/                         # Test suites
 │   ├── unit/
 │   ├── integration/
 │   └── e2e/
-├── migrations/                   # Database migrations
-├── .env.example                  # Variables de entorno ejemplo
-├── .eslintrc.json               # ESLint config
-├── .prettierrc                  # Prettier config
-├── next.config.mjs              # Next.js config
-├── tailwind.config.ts           # Tailwind config
-├── tsconfig.json                # TypeScript config
-├── package.json                 # Dependencias
-└── README.md                    # Este archivo
+├── migrations/                    # Database migrations
+├── .env.example                   # Example environment variables
+├── .eslintrc.json                 # ESLint configuration
+├── .prettierrc                    # Prettier configuration
+├── next.config.mjs                # Next.js configuration
+├── tailwind.config.ts             # Tailwind CSS configuration
+├── tsconfig.json                  # TypeScript configuration
+├── package.json                   # Project dependencies
+└── README.md                      # Project documentation
 ```
 
 ---
 
-## 💻 Comandos Disponibles
+## 💻 Available Commands
 
-### Desarrollo
+### Development
 
 ```bash
-# Iniciar servidor de desarrollo
+# Start the development server
 npm run dev
 
-# Iniciar con turbo (si usas monorepo)
+# Start with Turbo (for monorepo setups)
 npm run dev:turbo
 ```
 
-Abre [http://localhost:3000](http://localhost:3000)
+Open **http://localhost:3000**
 
-### Build y Producción
+### Build & Production
 
 ```bash
-# Build para producción
+# Build for production
 npm run build
 
-# Iniciar servidor de producción
+# Start the production server
 npm start
 ```
 
 ### Code Quality
 
 ```bash
-# Linting
+# Run ESLint
 npm run lint
 
-# Linting con auto-fix
+# Run ESLint with auto-fix
 npm run lint:fix
 
-# Typecheck
+# Run TypeScript type checking
 npm run typecheck
 
-# Formatear código
+# Format the code
 npm run format
 
-# Verificar formateo (CI)
+# Verify formatting (CI)
 npm run format:check
 ```
 
 ### Testing
 
 ```bash
-# Unit tests
+# Run unit tests
 npm run test:unit
 
-# Unit tests con watch mode
+# Run unit tests in watch mode
 npm run test:unit:watch
 
-# E2E tests
+# Run end-to-end tests
 npm run test:e2e
 
-# Coverage
+# Generate test coverage
 npm run test:coverage
 ```
 
 ### Database
 
 ```bash
-# Generar tipos de Prisma
+# Generate Prisma types
 npm run prisma:generate
 
-# Crear migración
+# Create a new migration
 npm run prisma:migrate
 
-# Resetear base de datos
+# Reset the database
 npm run prisma:reset
 
-# Seed de datos de prueba
+# Seed the database
 npm run prisma:seed
-```
 
-### Herramientas
+```
+### Tools
 
 ```bash
-# Limpiar caché de Next.js
+# Clear the Next.js cache
 npm run clean
 
-# Analisis de bundle
+# Analyze the bundle
 npm run analyze
 
-# Storybook (si aplica)
+# Launch Storybook (if applicable)
 npm run storybook
 ```
 
 ---
 
-## 📐 Convenciones de Desarrollo
+## 📐 Development Conventions
 
-### Código
+### Code
 
 #### TypeScript
 
 ```typescript
-// ✅ Correcto: Tipos explícitos y descriptivos
+// ✅ Correct: Explicit and descriptive types
 interface Order {
   id: string;
   userId: string;
@@ -626,14 +636,14 @@ interface Order {
   createdAt: Date;
 }
 
-// ❌ Incorrecto: Tipos genéricos
+// ❌ Incorrect: Generic types
 type Order = any;
 ```
 
-#### Componentes React
+#### React Components
 
 ```typescript
-// ✅ Correcto: Componente funcional con TypeScript
+// ✅ Correct: Functional component with TypeScript
 interface ButtonProps {
   variant: 'primary' | 'secondary';
   children: React.ReactNode;
@@ -655,18 +665,18 @@ export function Button({ variant, children, onClick }: ButtonProps) {
 #### Naming Conventions
 
 ```typescript
-// Variables y funciones: camelCase
+// Variables and functions: camelCase
 const userName = 'John';
 function calculateTotal() { }
 
-// Componentes y tipos: PascalCase
+// Components and types: PascalCase
 function OrderCard() { }
 interface ProductDetails { }
 
-// Constantes: UPPER_SNAKE_CASE
+// Constants: UPPER_SNAKE_CASE
 const MAX_RETRY_ATTEMPTS = 3;
 
-// Archivos: kebab-case
+// File names: kebab-case
 // order-details.tsx
 // create-order.ts
 ```
@@ -674,7 +684,7 @@ const MAX_RETRY_ATTEMPTS = 3;
 #### Imports
 
 ```typescript
-// ✅ Correcto: Ordenado y agrupado
+// ✅ Correct: Organized and grouped imports
 import { useState } from 'react';
 
 import { Button } from '@/components/ui/Button';
@@ -688,7 +698,7 @@ import { formatCurrency } from '@/lib/utils';
 
 #### Commits
 
-Seguimos [Conventional Commits](https://www.conventionalcommits.org/):
+We follow the **Conventional Commits** specification:
 
 ```bash
 # Features
@@ -697,10 +707,10 @@ git commit -m "feat(auth): add login with email/password"
 # Bug fixes
 git commit -m "fix(orders): prevent duplicate order submission"
 
-# Docs
+# Documentation
 git commit -m "docs(readme): add installation instructions"
 
-# Refactor
+# Refactoring
 git commit -m "refactor(components): extract Button component"
 
 # Tests
@@ -726,12 +736,12 @@ hotfix/payment-crash
 ### Testing
 
 ```typescript
-// ✅ Correcto: Test descriptivo
+// ✅ Correct: Descriptive test
 describe('OrderCard', () => {
   it('should display order total formatted as currency', () => {
     const order = mockOrder({ total: 1500 });
     render(<OrderCard order={order} />);
-    
+
     expect(screen.getByText('$15.00')).toBeInTheDocument();
   });
 });
@@ -739,158 +749,174 @@ describe('OrderCard', () => {
 
 ---
 
-## 🤝 Contribución Diaria
+## 🤝 Daily Contributions
 
-### Proceso de Actualización Diaria
+### Daily Development Workflow
 
-**Todos los días** se realizarán actualizaciones al repositorio:
+The repository is updated **every day** with new commits, improvements, and features.
 
-#### 📅 Lunes - Viernes
+#### 📅 Monday – Friday
 
-| Hora | Actividad |
-|------|-----------|
-| 09:00 | Review de issues y pull requests |
-| 10:00 - 13:00 | Desarrollo de features planificadas |
-| 14:00 - 17:00 | Testing y documentación |
-| 18:00 | Commit y push de cambios |
+| Time | Activity |
+|------|----------|
+| 09:00 | Review issues and pull requests |
+| 10:00 – 13:00 | Develop planned features |
+| 14:00 – 17:00 | Testing and documentation |
+| 18:00 | Commit and push changes |
 
-#### 📅 Sábado
+#### 📅 Saturday
 
-| Hora | Actividad |
-|------|-----------|
-| 10:00 - 13:00 | Code review y optimizaciones |
-| 14:00 - 16:00 | Actualización de documentación |
-| 17:00 | Release notes de la semana |
+| Time | Activity |
+|------|----------|
+| 10:00 – 13:00 | Code review and optimization |
+| 14:00 – 16:00 | Documentation updates |
+| 17:00 | Weekly release notes |
 
-### Cómo Contribuir
+### How to Contribute
 
-1. **Fork** el repositorio
-2. **Clona** tu fork
-   ```bash
-   git clone https://github.com/tu-usuario/sistema-restaurante.git
-   ```
-3. **Crea una rama** para tu feature
-   ```bash
-   git checkout -b feature/nueva-feature
-   ```
-4. **Desarrolla** seguindo las convenciones
-5. **Testea** tu código
-   ```bash
-   npm run lint
-   npm run typecheck
-   npm run test
-   ```
-6. **Commit** tus cambios
-   ```bash
-   git commit -m "feat(scope): descripción"
-   ```
-7. **Push** a tu fork
-   ```bash
-   git push origin feature/nueva-feature
-   ```
-8. **Abre un Pull Request** en GitHub
+1. **Fork** the repository.
+2. **Clone** your fork.
 
-### Código de Conducta
+```bash
+git clone https://github.com/your-username/restaurant-cms.git
+```
 
-- Respeto mutuo en todas las interacciones
-- Feedback constructivo y profesional
-- Código limpio y documentado
-- Tests obligatorios para nuevas features
-- Commits descriptivos y atómicos
+3. **Create a feature branch.**
 
----
+```bash
+git checkout -b feature/new-feature
+```
 
-## 📊 Estado Actual
+4. **Develop** your feature following the project conventions.
 
-### ✅ Completado
+5. **Test** your code.
 
-- [x] Setup del proyecto con Next.js 15
-- [x] Configuración de TypeScript 5.7
-- [x] Tailwind CSS con tema personalizado
-- [x] Instalador wizard multi-paso
-- [x] Soporte para 6 idiomas (ES, EN, FR, ZH, RU, PT)
-- [x] Integración con Supabase
-- [x] Integración con Firebase
-- [x] Estructura de carpetas modular
-- [x] Sistema de validación con Zod
-- [x] Linter y formatter configurados
+```bash
+npm run lint
+npm run typecheck
+npm run test
+```
 
-### 🔄 En Progreso
+6. **Commit** your changes.
 
-- [ ] Sistema de autenticación completo
-- [ ] Gestión de roles y permisos
+```bash
+git commit -m "feat(scope): description"
+```
 
-### ⏳ Pendiente
+7. **Push** your branch.
 
-- [ ] Módulo de pedidos
-- [ ] Módulo de menú
-- [ ] Módulo de pagos
-- [ ] Reports y analytics
-- [ ] PWA y offline support
-- [ ] Testing completo
-- [ ] Documentación de API
+```bash
+git push origin feature/new-feature
+```
+
+8. **Open a Pull Request** on GitHub.
+
+### Code of Conduct
+
+- Treat everyone with respect.
+- Provide constructive and professional feedback.
+- Write clean, well-documented code.
+- Include tests for all new features.
+- Use clear and atomic commit messages.
 
 ---
 
-## 🔒 Seguridad
+## 📊 Current Status
 
-### Mejores Prácticas Implementadas
+### ✅ Completed
 
-- ✅ Validación de input con Zod
-- ✅ Protección CSRF en formularios
-- ✅ Sanitización de HTML
-- ✅ Rate limiting en API routes
-- ✅ Autenticación con JWT
-- ✅ Encriptación de contraseñas (bcrypt)
-- ✅ HTTPS obligatorio en producción
-- ✅ Variables de entorno seguras
+- [x] Next.js 15 project setup
+- [x] TypeScript 5.7 configuration
+- [x] Tailwind CSS with a custom theme
+- [x] Multi-step installation wizard
+- [x] Support for 6 languages (ES, EN, FR, ZH, RU, PT)
+- [x] Supabase integration
+- [x] Firebase integration
+- [x] Modular project structure
+- [x] Zod validation system
+- [x] ESLint and Prettier configuration
 
-### Reportar Vulnerabilidades
+### 🔄 In Progress
 
-Si encuentras una vulnerabilidad de seguridad, **NO abras un issue público**.  
-Envía un email a: `security@ejemplo.com`
+- [ ] Complete authentication system
+- [ ] User roles and permission management
 
----
+### ⏳ Planned
 
-## 📄 Licencia
-
-Este proyecto está bajo la licencia **MIT**. Ver [LICENSE](LICENSE) para más detalles.
-
----
-
-## 🙏 Agradecimientos
-
-- [Next.js](https://nextjs.org/) - Framework React
-- [Supabase](https://supabase.com/) - Backend as a Service
-- [Firebase](https://firebase.google.com/) - Google's app platform
-- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS
-- [TypeScript](https://www.typescriptlang.org/) - JavaScript with types
-- [Vercel](https://vercel.com/) - Deployment platform
+- [ ] Order management module
+- [ ] Menu management module
+- [ ] Payment module
+- [ ] Reports and analytics
+- [ ] PWA and offline support
+- [ ] Comprehensive testing
+- [ ] API documentation
 
 ---
 
-## 📞 Contacto
+## 🔒 Security
 
-- **Autor**: [Tu Nombre]
-- **Email**: tu@email.com
-- **Twitter**: [@tu_usuario](https://twitter.com/tu_usuario)
-- **LinkedIn**: [Tu Perfil](https://linkedin.com/in/tu_perfil)
-- **Website**: [tusitio.com](https://tusitio.com)
+### Implemented Best Practices
+
+- ✅ Input validation with Zod
+- ✅ CSRF protection for forms
+- ✅ HTML sanitization
+- ✅ API route rate limiting
+- ✅ JWT authentication
+- ✅ Password hashing (bcrypt)
+- ✅ HTTPS enforced in production
+- ✅ Secure environment variables
+
+### Reporting Vulnerabilities
+
+If you discover a security vulnerability, **DO NOT open a public issue**.
+
+Instead, report it via email to:
+
+```text
+security@example.com
+```
 
 ---
 
-## 🌟 Apoya el Proyecto
+## 📄 License
 
-Si este proyecto te resulta útil, considera:
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more information.
 
-- ⭐ Dar una estrella en GitHub
-- 🐦 Compartir en redes sociales
-- 💡 Reportar bugs o sugerir features
-- 🔧 Contribuir con código o documentación
+---
+
+## 🙏 Acknowledgements
+
+- [Next.js](https://nextjs.org/) — React Framework
+- [Supabase](https://supabase.com/) — Backend as a Service
+- [Firebase](https://firebase.google.com/) — Google's application platform
+- [Tailwind CSS](https://tailwindcss.com/) — Utility-first CSS framework
+- [TypeScript](https://www.typescriptlang.org/) — JavaScript with static typing
+- [Vercel](https://vercel.com/) — Deployment platform
+
+---
+
+## 📞 Contact
+
+- **Author:** Your Name
+- **Email:** your@email.com
+- **Twitter/X:** [@your_username](https://twitter.com/your_username)
+- **LinkedIn:** [Your Profile](https://linkedin.com/in/your-profile)
+- **Website:** [yourwebsite.com](https://yourwebsite.com)
+
+---
+
+## 🌟 Support the Project
+
+If you find this project useful, consider:
+
+- ⭐ Starring the repository on GitHub
+- 🐦 Sharing it on social media
+- 💡 Reporting bugs or suggesting new features
+- 🔧 Contributing code or documentation
 
 ---
 
 <p align="center">
-  <strong>Hecho con ❤️ y ☕ por desarrolladores apasionados</strong><br />
-  <em>© 2026 Sistema Restaurante CMS - Todos los derechos reservados</em>
+  <strong>Made with ❤️ and ☕ by passionate developers</strong><br />
+  <em>© 2026 Restaurant CMS. All rights reserved.</em>
 </p>
